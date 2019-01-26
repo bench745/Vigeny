@@ -19,3 +19,5 @@ print('Decyrpting ' + cipherText + ' with the key ' + key)
 plainText = decrypt(cipherText, key)
 print(plainText)
 ```
+
+In the future I may make vigeny.py into a single one line function that encrypts or decrypts depending on some argument.
