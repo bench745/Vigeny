@@ -5,7 +5,7 @@ Note that the functions will take inputs of any case but will ouput only upper c
 Similarly to the original cipher the code only handles letters, but could be easily expanded (by removing all "- 65"s and replacing "% 26"
 with "% 1114112").
 
-'''python
+```python
 import vigeny
 
 message = 'FRIENDSROMANSCOUNTRYMENLENDMEYOUREARS'
@@ -18,4 +18,4 @@ print(cipherText)
 print('Decyrpting ' + cipherText + ' with the key ' + key)
 plainText = decrypt(cipherText, key)
 print(plainText)
-'''
+```
