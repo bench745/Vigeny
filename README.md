@@ -1,5 +1,5 @@
 # Vigeny
-A python script that implements the vigenere cipher in two lines, encrypt and decrypt.
+A python script that implements the vigenere cipher in one line.
 
 Note that the functions will take inputs of any case but will ouput only upper case.
 Similarly to the original cipher the code only handles letters, but could be easily expanded (by removing all "- 65"s and replacing "% 26"
