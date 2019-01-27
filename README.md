@@ -12,11 +12,11 @@ message = 'FRIENDSROMANSCOUNTRYMENLENDMEYOUREARS'
 key = 'KEYPHRASE'
 
 print('Encrypting ' + message + ' with the key ' + key)
-cipherText = encrypt(message, key)
+cipherText = vigeny.encrypt(message, key)
 print(cipherText)
 
 print('Decyrpting ' + cipherText + ' with the key ' + key)
-plainText = decrypt(cipherText, key)
+plainText = vigeny.decrypt(cipherText, key)
 print(plainText)
 ```
 
