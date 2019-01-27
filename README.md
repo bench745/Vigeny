@@ -12,12 +12,18 @@ message = 'FRIENDSROMANSCOUNTRYMENLENDMEYOUREARS'
 key = 'KEYPHRASE'
 
 print('Encrypting ' + message + ' with the key ' + key)
-cipherText = vigeny.encrypt(message, key)
+cipherText = vigeny.crypt(message, key, 1)
 print(cipherText)
 
 print('Decyrpting ' + cipherText + ' with the key ' + key)
-plainText = vigeny.decrypt(cipherText, key)
+plainText = vigeny.crypt(cipherText, key, -1)
 print(plainText)
 ```
 
-In the future I may make vigeny.py into a single one line function that encrypts or decrypts depending on some argument.
+As you can see the only function in vigeny is crypt. The first argument is the message or cipher text, the second argument is the key and then the third argument is shows how to apply the key.
+
+When the third argument is 1 the key is applied once, 2 it is applied twice etc. To decrypt simply set the third argument to the negative counter part of the one used to decrypt.\
+For example ```vigeny.crypt(message, key, 9)``` \
+can be reversed with ```vigeny.crypt(message, key, -9)``` \
+and likewise ```vigeny.crypt(message, key, -4)``` \
+can be reversed with ```vigeny.crypt(message, key, 4)```.
