@@ -23,7 +23,11 @@ print(plainText)
 As you can see the only function in vigeny is crypt. The first argument is the message or cipher text, the second argument is the key and then the third argument is shows how to apply the key.
 
 When the third argument is 1 the key is applied once, 2 it is applied twice etc. To decrypt simply set the third argument to the negative counter part of the one used to decrypt.\
-For example ```vigeny.crypt(message, key, 9)``` \
-can be reversed with ```vigeny.crypt(message, key, -9)``` \
-and likewise ```vigeny.crypt(message, key, -4)``` \
-can be reversed with ```vigeny.crypt(message, key, 4)```.
+For example:\
+```vigeny.crypt(message, key, 9)``` \
+ can be reversed with\
+```vigeny.crypt(message, key, -9)``` \
+and likewise\
+```vigeny.crypt(message, key, -4)``` \
+can be reversed with\
+```vigeny.crypt(message, key, 4)```
