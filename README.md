@@ -27,3 +27,5 @@ For example...\
 ```vigeny.crypt(message, key, 9)``` can be reversed with ```vigeny.crypt(message, key, -9)``` \
 and likewise...\
 ```vigeny.crypt(message, key, -4)``` can be reversed with ```vigeny.crypt(message, key, 4)```
+
+There is also a truly one line implementation that will run on its own in ```oneln.py```.
