@@ -11,4 +11,7 @@
 # sum the tuples in a list of tuples                      >>  list(map(lambda x: (x[0] + x[1]) % 26, LIST1))
 # terns the terms of a list to a string                   >>  ''.join(list())
 
-crypt = lambda m,k,e: ''.join(list(map(lambda x: chr(x + 65), list(map(lambda x: (x[0] + (e*x[1])) % 26, list(zip(list(map(lambda x: ord(x) - 65, m.upper())), [list(map(lambda x: ord(x) - 65, k.upper()))[i % len(list(map(lambda x: ord(x) - 65, k.upper()))) ] for i in range(len(list(map(lambda x: ord(x) - 65, m.upper()))))])))))))
+#crypt = lambda m,k,e: ''.join(list(map(lambda x: chr(x + 65), list(map(lambda x: (x[0] + (e*x[1])) % 26, list(zip(list(map(lambda x: ord(x) - 65, m.upper())), [list(map(lambda x: ord(x) - 65, k.upper()))[i % len(list(map(lambda x: ord(x) - 65, k.upper()))) ] for i in range(len(list(map(lambda x: ord(x) - 65, m.upper()))))])))))))
+
+
+crypt = lambda text, keystr, times: ''.join(list(map(lambda x: chr( (ord(x[0]) + (times*ord(x[1])) )%256), zip(text, keystr))))
