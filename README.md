@@ -1,15 +1,11 @@
 # Vigeny
 A python script that implements the vigenere cipher in one line, either as a function (```vigeny.py```) or as a standalone program (```oneln.py```).
 
-Note that the functions will take inputs of any case but will ouput only upper case.
-Similarly to the original cipher the code only handles letters, but could be easily expanded (by removing all "- 65"s and replacing "% 26"
-with "% 1114112").
-
 ```python
 import vigeny
 
 message = 'FRIENDSROMANSCOUNTRYMENLENDMEYOUREARS'
-key = 'KEYPHRASE'
+key =     'KEYPHRASEKEYPHRASEKEYPHRASEKEYPHRASEK'
 
 print('Encrypting ' + message + ' with the key ' + key)
 cipherText = vigeny.crypt(message, key, 1)
